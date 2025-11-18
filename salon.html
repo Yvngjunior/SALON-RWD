@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hairstyle Salon</title>
+    <title>Hairstyle Salon - Ritual Transformation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="salon.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">Hairstyle Salon</div>
-        <div class="welcome-text">Welcome to Hairstyle Salon</div>
+        <div class="logo"><img src="images/beayty.jpeg" alt="salon"></div>
+        <div class="welcome-text">Welcome to Your Transformation Ritual</div>
         <nav class="desktop-nav">
             <a href="#">Home</a>
             <a href="#">Services</a>
@@ -21,25 +23,37 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
+   <!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+        <span class="close-mobile-menu" id="close-mobile-menu">&times;</span>
     </div>
+    <a href="#"><i class="fa fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-cut"></i> Services</a>
+    <a href="#"><i class="fa fa-image"></i> Gallery</a>
+    <a href="#"><i class="fa fa-phone"></i> Contact</a>
+</div>
+
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="mannequin-card" id="kids-card">
+            <div class="gradient-frame"></div>
             <img id="kids-img" src="images/woman2.png" alt="Kids Styles">
-            <h3>Kids Styles</h3>
         </div>
+
         <div class="mannequin-card" id="adult-card">
+            <div class="gradient-frame"></div>
             <img id="adult-img" src="images/THEMAN.png" alt="Adult Styles">
-            <h3>Adult Styles</h3>
         </div>
+
         <button class="book-btn" id="book-btn">Book Session</button>
     </section>
+
+    <!-- Booking Activity Ticker -->
+    <div class="booking-ticker">
+        <span id="ticker-text">Jane from Nairobi just booked a Haircut! &nbsp;&nbsp;|&nbsp;&nbsp; Mike from Mombasa booked a Pedicure!</span>
+    </div>
 
     <!-- Services Section -->
     <section class="services">
@@ -64,18 +78,38 @@
     <!-- Testimonials Section -->
     <section class="testimonials">
         <h2>What Our Clients Say</h2>
-        <div class="testimonial-card">
-            <p>"Great salon, my kids loved their hairstyles!"</p>
-            <span>- Alice</span>
+        <div class="testimonial-carousel">
+            <div class="testimonial-card">
+                <img src="images/M3h.png" alt="Alice">
+                <p>"Great salon, my kids loved their hairstyles!"</p>
+                <span>-- Brian</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="images/kev1.png" alt="John">
+                <p>"Professional staff and amazing nail art!"</p>
+                <span>-- John</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="images/t1h.jpeg" alt="Mary">
+                <p>"I always get compliments after visiting this salon."</p>
+                <span>-- Natalia</span>
+            </div>
+             <div class="testimonial-card">
+                <img src="images/mercy1.png" alt="Mercy">
+                <p>"The place is charming and Lovely. So cute 😍"</p>
+                <span>-- Mary</span>
+            </div>
         </div>
-        <div class="testimonial-card">
-            <p>"Professional staff and amazing nail art!"</p>
-            <span>- John</span>
+    </section>
+
+    <!-- Map & About -->
+    <section class="about">
+        <h3>Visit Us</h3>
+        <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=Nairobi%20Salon&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="testimonial-card">
-            <p>"I always get compliments after visiting this salon."</p>
-            <span>- Mary</span>
-        </div>
+        <p>Discover our latest trending styles and transformation rituals. <a href="#">Explore Gallery</a></p>
     </section>
 
     <!-- Booking Panel -->
@@ -110,10 +144,47 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <p>Contact us: +254 700 000 000 | email@example.com</p>
-        <p>Follow us on social media!</p>
-    </footer>
+<footer>
+    <div class="footer-top">
+        <div class="footer-column">
+            <h4>About Us</h4>
+            <p>Established 2015, Hairstyle Salon has been transforming beauty rituals with care and precision.</p>
+            <p> <strong>Our mission:</strong> bring calm, confidence, and elegance to every client.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Trending Styles</h4>
+            <ul>
+                <li><a href="#">Curated Hairstyles</a></li>
+                <li><a href="#">Nail Art Collections</a></li>
+                <li><a href="#">Facial Packages</a></li>
+                <li><a href="#">Seasonal Specials</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><img src="images/instaaa.png" alt="Instagram"></a>
+                <a href="#"><img src="images/bookface.jpeg" alt="Facebook"></a>
+                <a href="#"><img src="images/tiktk.png" alt="TikTok"></a>
+                <a href="#"><img src="images/WhatsApp.svgss.webp" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Hairstyle Salon. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </div>
+</footer>
+
 
     <script src="salon.js"></script>
 </body>
