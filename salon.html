@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hairstyle Salon</title>
+    <link rel="stylesheet" href="salon.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Hairstyle Salon</div>
+        <div class="welcome-text">Welcome to Hairstyle Salon</div>
+        <nav class="desktop-nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="hamburger">&#9776;</div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="mannequin-card" id="kids-card">
+            <img id="kids-img" src="images/woman2.png" alt="Kids Styles">
+            <h3>Kids Styles</h3>
+        </div>
+        <div class="mannequin-card" id="adult-card">
+            <img id="adult-img" src="images/THEMAN.png" alt="Adult Styles">
+            <h3>Adult Styles</h3>
+        </div>
+        <button class="book-btn" id="book-btn">Book Session</button>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card">
+            <img src="images/t2.jpeg" alt="Manicure">
+            <h4>Manicure</h4>
+        </div>
+        <div class="service-card">
+            <img src="images/pedicure1.jpg" alt="Pedicure">
+            <h4>Pedicure</h4>
+        </div>
+        <div class="service-card">
+            <img src="images/hairstyles1.jpg" alt="Hairstyles">
+            <h4>Hairstyles</h4>
+        </div>
+        <div class="service-card">
+            <img src="images/woman2.png" alt="Facial">
+            <h4>Facial / Packages</h4>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-card">
+            <p>"Great salon, my kids loved their hairstyles!"</p>
+            <span>- Alice</span>
+        </div>
+        <div class="testimonial-card">
+            <p>"Professional staff and amazing nail art!"</p>
+            <span>- John</span>
+        </div>
+        <div class="testimonial-card">
+            <p>"I always get compliments after visiting this salon."</p>
+            <span>- Mary</span>
+        </div>
+    </section>
+
+    <!-- Booking Panel -->
+    <div class="booking-panel" id="booking-panel">
+        <div class="booking-header">
+            <h3>Book Your Session</h3>
+            <span class="close-btn" id="close-booking">&times;</span>
+        </div>
+        <div class="booking-body">
+            <label for="service-select">Select Service:</label>
+            <select id="service-select">
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="hairstyle">Hairstyles</option>
+                <option value="facial">Facial / Packages</option>
+            </select>
+
+            <label for="style-select">Select Style:</label>
+            <select id="style-select">
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date">
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time">
+
+            <button id="confirm-booking">Book Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: +254 700 000 000 | email@example.com</p>
+        <p>Follow us on social media!</p>
+    </footer>
+
+    <script src="salon.js"></script>
+</body>
+</html>
