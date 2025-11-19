@@ -175,8 +175,8 @@ header nav a:hover {
     position: absolute; 
     bottom: 10px;
      right: 20px;
-    background: #d95c90;
-     color: #fff; 
+    background: linear-gradient(to left, #d95c90,hsl(120, 1%, 13%));
+     color: lab(91.47% -11.21 15.79); 
      border: none;
      text-align: center;
      font-weight: 800;
