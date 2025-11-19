@@ -1,6 +1,6 @@
 // Mannequin Images
-const kidsStyles = ["images/woman2.png", "images/t2.jpeg", "images/mercy1.png"];
-const adultStyles = ["images/THEMAN.png", "images/adult2.jpg", "images/kd1.jpeg"];
+const kidsStyles = ["images/kd1he.jpeg", "images/t2.jpeg", "images/woman1.png"];
+const adultStyles = ["images/mercy1.png", "images/t1h.jpeg", "images/t2he.jpeg"];
 
 let kidsIndex = 0;
 let adultIndex = 0;
