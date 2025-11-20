@@ -1,6 +1,6 @@
 // Mannequin Images
-const kidsStyles = ["images/kd1he.jpeg", "images/t2.jpeg", "images/woman1.png"];
-const adultStyles = ["images/mercy1.png", "images/t1h.jpeg", "images/t2he.jpeg"];
+const kidsStyles = ["images/art1.png", "images/art2.png", "images/atr4.png"];
+const adultStyles = ["images/w1.png", "images/w2.png", "images/w3.png"];
 
 let kidsIndex = 0;
 let adultIndex = 0;
@@ -121,6 +121,27 @@ confirmBooking.addEventListener("click", () => {
     bookingPanel.classList.remove("active");
 });
 
+/*setting up other services image rotator*/
+const categoryImagess = {
+    pedicure: [""],
+     manicure: [""],
+      hairstyle: [""],
+       facial: [""],
+};
+
+// logic
+document.querySelectorAll("").forEach(() => {
+    let index = 0;
+    const group = img.dataset.category;
+    setInterval(() => {
+        index = (index + 1) % categoryImagess[group].length;
+        img.classList.add("zoom");
+        setTimeout(() => {
+            img.src = categoryImagess[group][index];
+            img.classList.remove("zoom");
+        }, 350);
+    }, 2500);
+});
 
 // Testimonial Carousel
 const testimonials = document.querySelectorAll(".testimonial-card");
