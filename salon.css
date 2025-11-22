@@ -9,7 +9,12 @@ body {
     background: #fff5f8;
     color: #333;
 }
-
+.hero-wrapper {
+  position: relative;
+  background: url("images/salon\ back.jpg") center/cover no-repeat;
+  background-attachment: fixed; /* optional: creates parallax-like effect */
+  color: #fff; /* makes text readable */
+}
 /* Header */
 header {
     display: flex;
@@ -27,8 +32,23 @@ header .logo img {
    border: 1px solid tomato;
    outline: inset;
    background: linear-gradient(to left, pink,purple);
+   transition: all 0.5s ease;
+   animation: rtate 1s infinite;
     }
-
+@keyframes rtate {
+   0% {
+transform: rotate(90deg);
+transform: translateX(60deg);
+   } 
+     50% {
+   transform: rotateY(180deg); 
+   transform: skewX(30deg);
+   } 
+     100% {
+    transform: rotate(-360deg);
+    transform: skewY(-30deg);
+   } 
+}
 header .welcome-text {
      font-size: 1rem; 
      color: #666;
@@ -110,6 +130,8 @@ header nav a:hover {
      display: none;
       font-size: 1.8rem; 
       cursor: pointer;
+      color: #000;
+      text-shadow: 0 3px 2px #c425bc;
      }
 
 /* Mobile Menu */
@@ -278,10 +300,34 @@ header nav a:hover {
       text-align: center;
      }
 
-.testimonials h2 { margin-bottom: 30px; color: #d95c90; }
-.testimonial-carousel { display: flex; overflow: hidden; justify-content: center; position: relative; }
-.testimonial-card { min-width: 300px; margin: 0 10px; padding: 20px; border-radius: 10px; background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; flex-shrink: 0; }
-.testimonial-card img { width: 60px; height: 60px; border-radius: 50%; margin-bottom: 10px; object-fit: cover; }
+.testimonials h2 {
+     margin-bottom: 30px;
+      color: #d95c90;
+     }
+.testimonial-carousel {
+     display: flex;
+      overflow: hidden; 
+      justify-content: center;
+       position: relative; 
+    }
+.testimonial-card { min-width: 300px;
+     margin: 0 10px; padding: 20px;
+      border-radius: 10px;
+       background: linear-gradient(to left,#343636,gray);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+         text-align: center; 
+         flex-shrink: 0;
+         color: hsl(320, 16%, 96%);
+         text-shadow: 0 3px 2px #f01ca9;
+         font-weight: 700;
+         }
+.testimonial-card img {
+     width: 60px;
+      height: 60px;
+       border-radius: 50%;
+        margin-bottom: 10px;
+         object-fit: cover;
+         }
 
 /* Map & About */
 .about { padding: 50px 30px; text-align: center; }

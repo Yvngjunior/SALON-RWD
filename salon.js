@@ -1,6 +1,6 @@
 // Mannequin Images
-const kidsStyles = ["images/art1.png", "images/art2.png", "images/atr4.png"];
-const adultStyles = ["images/w1.png", "images/w2.png", "images/w3.png"];
+const kidsStyles = ["images/art1.png", "images/art2.png", "images/atr3.png", "images/atr4.png"];
+const adultStyles = ["images/w1.png", "images/w2.png", "images/w3.png","images/w4.png","images/w5.png",];
 
 let kidsIndex = 0;
 let adultIndex = 0;
@@ -123,10 +123,10 @@ confirmBooking.addEventListener("click", () => {
 
 /*setting up other services image rotator*/
 const categoryImagess = {
-    pedicure: [""],
-     manicure: [""],
-      hairstyle: [""],
-       facial: [""],
+    pedicure: ["p1.jpeg","p2.jpeg","p3.jpeg","p4.jpeg","p5.jpeg",],
+     manicure: ["1m.jpeg","2m.jpeg","3m.jpeg","4m.jpeg","6m.jpeg","7m.jpeg",],
+      hairstyle: ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg",],
+       facial: ["f1.jpeg","f2.jpeg","f3.jpeg","f4.jpeg","f5.jpeg","f6.jpeg",],
 };
 
 // logic
